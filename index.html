@@ -1,149 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel="stylesheet" type="text/css">
         <meta charset="UTF-8">
-        <title>Home</title>
-        <link href="css/estilo.css" type="text/css" rel="stylesheet">
-        <link href="css/bootstrap.min.css"  rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="imagem/logo3.ico" />
+        <link rel="stylesheet" href="css/estilo.css">
         <script src="js/jquery.min.js"></script>
     </head>
 
     <body>
-        <div id="home">
-            <div id="titulo">
-                <nav class="menu">  
-                    <form id="formpesquisa">
-                        <div>
-                            <input id="caixapesquisa" type="text" placeholder="Buscar no site">
-                            <input id="botaopesquisa" type="submit" value="">
-                        </div>
-                    </form>
-                    <ul>
-                        <li><img src="imagem/logo4_1.png" alt="LogoEngcomp" width="120"></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="grade.html">Grade Curricular</a></li>
-                        <li><a href="corpo.html">Corpo Docente</a></li>
-                        <li><a href="discente.html">Discentes</a></li>
-                        <li><a href="graduacao.html">Graduação</a></li>
-                        <li><a href="contatos.html">Contatos</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper indigo darken-1">
+            <a id="logo" href="#!" class="brand-logo">EngComp</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
-            <div class ="link">
-                <a href="http://www.sig.uema.br/" target="_blank">SigUema</a>
-                <a href="http://www.uema.br/portal-do-aluno/" target="_blank" >Portal do Aluno</a>
-                <a href="http://www.biblioteca.uema.br/" target="_blank">Biblioteca</a>
-            </div>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="grade.html">Grade Curricular</a></li>
+                <li><a href="corpo.html">Docente</a></li>
+                <li><a href="discente.html">Discentes</a></li>
+                <li><a href="graduacao.html">Graduação</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
 
-            <div class="conteudo">
-                <div class="ladoEsquerdo">
-                    <div class="banner">
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <div class="numbertext">1 / 3</div>
-                                <img src="imagem/banner1.jpg" alt="banner" style="width:100%">
-                                <div class="textBanner">Banner 1</div>
-                            </div>
-
-                            <div class="mySlides fade">
-                                <div class="numbertext">2 / 3</div>
-                                <img src="imagem/banner2.jpg" alt="banner" style="width:100%">
-                                <div class="textBanner">Banner 2</div>
-                            </div>
-
-                            <div class="mySlides fade">
-                                <div class="numbertext">3 / 3</div>
-                                <img src="imagem/banner3.jpg" alt="banner" style="width:100%">
-                                <div class="textBanner">Banner 3</div>
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-                        <br>
-
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span> 
-                        </div>
-                    </div>
-
-                    <div class="historia">
-                <h2 id="titulo_centralizado">História</h2>
-                        <p> O Curso de Engenharia de Computação tem a missão de contribuir com todas as atividades que a sociedade atribui à universidade: ensino, pesquisa e atividades de cultura e extensão nas áreas da Engenharia de Computação. A missão da Engenharia de Computação é formar profissionais, líderes e cientistas, apoiando a comunidade na resolução de problemas relacionados à sua atuação, e colaborando para a construção de uma sociedade justa e buscando melhoria da qualidade de vida dos brasileiros.</p>
-                <h2 id="titulo_centralizado">Missão</h2>
-                <p>
-                    O Curso de Engenharia de Computação tem a missão de contribuir com todas as atividades que a sociedade atribui à universidade: ensino, pesquisa e atividades de cultura e extensão nas áreas da Engenharia de Computação.</p>
-                <p>A missão da Engenharia de Computação é formar profissionais, líderes e cientistas, apoiando a comunidade na resolução de problemas relacionados à sua atuação, e colaborando para a construção de uma sociedade justa e buscando melhoria da qualidade de vida dos brasileiros.</p>
-
-                <h2 id="titulo_centralizado">Habilitações</h2>
-                <p>
-                    As três áreas de concentração que serão oferecidas no curso de Engenharia de Computação da UEMA serão:</p>
-
-                <p>Engenharia de Software e Tecnologia da Informação;</p>
-                <p>Automação e Controle;</p>
-                <p>Telemática e Telecomunicações.</p>
-                <p>As áreas de concentração serão ofertadas aos alunos a partir do <p>8º período quando serão disponibilizadas disciplinas eletivas para cada área, em cooperação com o Programa de Pós-Graduação em Engenharia de Computação e Sistemas, com base na disponibilidade docente e na demanda discente.</p>
-                <p> O processo de escolha da disciplinas eletivas pelos alunos decide a área de concentração onde fará as demais disciplinas eletivas nos períodos subsequentes. No processo de integração com a pós-graduação, será possível escolher as disciplinas eletivas dentre as disciplinas do Programa de Mestrado Profissional em Engenharia de Computação e Sistemas.</p>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="grade.html">Grade Curricular</a></li>
+                <li><a href="corpo.html">Docente</a></li>
+                <li><a href="discente.html">Discentes</a></li>
+                <li><a href="graduacao.html">Graduação</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fim Navbar -->
 
 
-                    </div>
-                </div>
-                <div class="ladoDireito">
-                    <p>NOTÍCIAS</p>
-                    <div  id="scroll">
+    <div class="carousel carousel-slider center" data-indicators="true">
 
-                        <div class="noticias">
-                            <img class="noticia" src="imagem/not1.png" alt="noticia.png"/>  
-                            <a href="emconstrucao.html">Notícia Teste 1</a>
-                            <p>Algum texto aleatório para visualizar melhor como a noticia é expressa nesse site.</p>  
-                        </div>
-                        <div class="noticias">
-                            <img class="noticia" src="imagem/not2.png" alt="noticia.png"/> 
-                            <a href="emconstrucao.html">Notícia Teste 2</a>
-                            <p>Algum texto aleatório para visualizar melhor como a noticia é expressa nesse site.</p>
+        <div class="carousel-item red white-text" href="#one!">
+            <h2>Uema</h2>
+            <p class="white-text">Engenharia da Computação <br>Alguma coisa</p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+            <h2>Second Panel</h2>
+            <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+            <h2>Third Panel</h2>
+            <p class="white-text">This is your third panel</p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+            <h2>Fourth Panel</h2>
+            <p class="white-text">This is your fourth panel</p>
+        </div>
+    </div>
 
-                        </div>
-                        <div class="noticias">
-                            <img class="noticia" src="imagem/not3.png" alt="noticia.png"/>
-                            <a href="emconstrucao.html">Notícia Teste 3</a>
-                            <p>Algum texto aleatório para visualizar melhor como a noticia é expressa nesse site.</p>
-                        </div>
 
-                    </div>
-                    <div class = "acesso">
-                        <svg class="bolas" width="110" height="100" >
-                        <circle cx="50" cy="50" r="40"  fill="orange" />
-                        <a xlink:href="emconstrucao.html" target="_blank">
-                        <text x="50" y="45" fill="white" font-family="Open Sans" font-size="11" text-anchor="middle">Empresa
-                        <tspan x="50" y="60"> Júnior</tspan>
-                        </text>
-                        </svg>
-                        <svg class="bolas" width="110" height="100">
-                        <circle cx="50" cy="50" r="40"  fill="green" />
-                        <a xlink:href="https://www.profissionaisti.com.br/empregos/" target="_blank">
-                        <text x="50" y="50" fill="white" font-family="Open Sans" font-size="11px" text-anchor="middle">Oportunidades</text>
-                        </svg>
-                        <svg class="bolas" width="110" height="100">
-                        <circle cx="50" cy="50" r="40"  fill="blue" />
-                        <a xlink:href="http://www.ppg.uema.br/" target="_blank">
-                        <text x="50" y="52" fill="white" font-family="Open Sans" font-size="11px" text-anchor="middle">Pesquisa</text>
-                        </svg>
 
-                    </div>
 
-                </div>
-            </div>
-            <footer id="rodape">
+
+    <footer class="footer">
                 <p> Todos Direitos reservados a Café-SA</p>
             </footer>
         </div>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/javascript.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="js/javascript.js"></script>
     </body>
 </html>
