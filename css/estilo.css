@@ -5,3 +5,8 @@ html,body{
 #logo{
     margin-left: 10px;
 }
+
+.tabela {
+    width: 1000px;
+    margin: 0 auto;
+}
