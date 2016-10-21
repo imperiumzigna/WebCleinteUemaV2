@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+       <meta charset="UTF-8">
+        <title>Discentes</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-        <meta charset="UTF-8">
-        <title>Discente</title>
-        <link href="css/estilo.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="imagem/logo3.ico" />
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/jquery.min.js"></script>
     </head>
+    
     <body>
-        <div id="home">
-            <div id="titulo">
-                <!--<figure class = "logo"><img src="imagem/logo4_1.png" alt="LogoEngcomp"></figure> -->
-                <nav class="menu">  
-                    <form id="formpesquisa">
-                        <div>
-                            <input id="caixapesquisa" type="text" placeholder="Buscar no site">
-                            <input id="botaopesquisa" type="submit" value="">
-                        </div>
-                    </form>
-                    <ul>
-                        <li><img src="imagem/logo4_1.png" alt="LogoEngcomp" width="120"></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="grade.html">Grade Curricular</a></li>
-                        <li><a href="corpo.html">Corpo Docente</a></li>
-                        <li><a href="discente.html">Discentes</a></li>
-                        <li><a href="graduacao.html">Graduação</a></li>
-                        <li><a href="contatos.html">Contatos</a></li>
+        
+         <!-- Navbar -->
+    <nav>   
+        <div class="nav-wrapper   blue-grey darken-3">
+            <a id="logo" href="#!" class=" brand-logo"><img src="imagem/logo4_1.png" alt="LogoEngcomp" width="70"></a>
+            <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="material-icons">menu</i></a>
 
-                    </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grade.html">Grade Curricular</a></li>
+                <li><a href="corpo.html">Docente</a></li>
+                <li><a href="discente.html">Discentes</a></li>
+                <li><a href="graduacao.html">Graduação</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
 
-                </nav>
-            </div>
-
-            <div class ="link">
-                <a href="http://www.sig.uema.br/" target="_blank">SigUema</a>
-                <a href="http://www.uema.br/portal-do-aluno/" target="_blank">Portal do Aluno</a>
-                <a href="http://www.biblioteca.uema.br/" target="_blank">Biblioteca</a>
-            </div>
-
-            <ul class ="submenu">
-                <li><a class="active" href="#home">Discentes</a></li>
-                <li><a href="#news">Horários</a></li>
-                <li><a href="#contact">Material de Aula</a></li>
-                <li><a href="#about">Apostilas</a></li>
-                <li><a href="#about">Livros</a></li>
-                <li><a href="#about">Automação</a></li>
-                <li><a href="#about">Telecomunicações</a></li>
-                <li><a href="#about">Tecnologia da Informação</a></li>
-            </ul> 
-
-            <div class="conteudo">
-
-
-                <div id="discente" style="margin-left:25%;padding:1px 16px;height:1000px;">
-                    <h2 id="titulo_discente">Tecnologia da Informação</h2>
-
-                    <p>A TI é uma grande força nas áreas de finanças, planejamento de transportes, design, produção de bens, assim como na imprensa, nas atividades editoriais, na produção musical e cinematográfica, no rádio e na televisão. O desenvolvimento cada vez mais rápido de novas tecnologias de informação modificou as bibliotecas e os centros de documentação (principais locais de armazenamento de informação), introduzindo novas formas de organização e acesso aos dados e obras armazenadas; reduziu custos e acelerou a produção dos jornais e possibilitou a formação instantânea de redes televisivas de âmbito mundial.[4]</p>
-
-                </div>
-
-            </div>
-
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grade.html">Grade Curricular</a></li>
+                <li><a href="corpo.html">Docente</a></li>
+                <li><a href="discente.html">Discentes</a></li>
+                <li><a href="graduacao.html">Graduação</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
         </div>
-        <footer id="rodape">
-            <p> Todos Direitos reservados a Café-SA</p>
-        </footer>
-        <script src="js/javascript.js"></script>
+    </nav>
+    <!-- Fim Navbar -->
+        <div class="row">
+        <div class="col s3">
+    <ul class="collection">
+    <li class="collection-item"><a  href="#home">Discentes</a></li>
+    <li class="collection-item"><a href="#news">Horários</a></li>
+    <li class="collection-item"><a href="#contact">Material de Aula</a></li>
+    <li class="collection-item"><a href="#about">Livros</a></li>
+    <li class="collection-item"><a href="#about">Apostilas</a></li>
+    <li class="collection-item"><a href="#about">Automação</a></li>
+    <li class="collection-item"><a href="#about">Telecomunicações</a></li>
+    <li class="collection-item"><a href="#about">Tecnologia da Informação</a></li>
+    </ul>
+        </div>
+
+
+            <div class="col s6">
+                
+                <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Tecnologia da Informação</h2>  
+  <p id="graduacao">    
+    >A TI é uma grande força nas áreas de finanças, planejamento de transportes, design, produção de bens, assim como na imprensa,
+    nas atividades editoriais, na produção musical e cinematográfica, no rádio e na televisão. O desenvolvimento cada vez mais rápido
+    de novas tecnologias de informação modificou as bibliotecas e os centros de documentação (principais locais de armazenamento de
+    informação), introduzindo novas formas de organização e acesso aos dados e obras armazenadas; reduziu custos e acelerou a produção
+    dos jornais e possibilitou a formação instantânea de redes televisivas de âmbito mundial.
+    
+  </p>
+    </div>
+</div>
+
+</div>
+<!-- Fim row -->
+<footer class="page-footer blue-grey darken-3">      
+      
+       <div class="footer-copyright blue-grey darken-3">
+            <div class="container">
+                
+              <div class="col l6 s12">
+                © Desenvolvido pela Café SA
+              </div>
+                      
+            </div>
+        </div>
+    </footer>
+
+       <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="js/javascript.js"></script>
     </body>
 </html>
