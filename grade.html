@@ -10,38 +10,32 @@
         <link rel="shortcut icon" type="image/x-icon" href="imagem/logo3.ico" />
     </head>
     <body>
-        <div id="home">
-            <div id="titulo">
-                <!--<figure class = "logo"><img src="imagem/logo4_1.png" alt="LogoEngcomp"></figure> -->
-                <nav class="menu">  
-                    <form id="formpesquisa">
-                        <div>
-                            <input id="caixapesquisa" type="text" placeholder="Buscar no site">
-                            <input id="botaopesquisa" type="submit" value="">
-                        </div>
-                    </form>
-                    <ul>
-                        <li><img src="imagem/logo4_1.png" alt="LogoEngcomp" width="120"></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="grade.html">Grade Curricular</a></li>
-                        <li><a href="corpo.html">Corpo Docente</a></li>
-                        <li><a href="discente.html">Discentes</a></li>
-                        <li><a href="graduacao.html">Graduação</a></li>
-                        <li><a href="contatos.html">Contatos</a></li>
+    <nav>
+        <div class="nav-wrapper   blue-grey darken-3">
+            <a id="logo" href="#!" class=" brand-logo"><img src="imagem/logo4_1.png" alt="LogoEngcomp" width="70"></a>
+            <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="material-icons">menu</i></a>
 
-                    </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grade.html">Grade Curricular</a></li>
+                <li><a href="corpo.html">Docente</a></li>
+                <li><a href="discente.html">Discentes</a></li>
+                <li><a href="graduacao.html">Graduação</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
 
-                </nav>
-            </div>
-            
-             <div class ="link">
-                <a href="http://www.sig.uema.br/" target="_blank">SigUema</a>
-                <a href="http://www.uema.br/portal-do-aluno/" target="_blank">Portal do Aluno</a>
-                <a href="http://www.biblioteca.uema.br/" target="_blank">Biblioteca</a>
-            </div>
-                  <h1 id="titulo_tabela">Grade Curricular</h1>                               
-                </div>
-        <div id="tabela"> 
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grade.html">Grade Curricular</a></li>
+                <li><a href="corpo.html">Docente</a></li>
+                <li><a href="discente.html">Discentes</a></li>
+                <li><a href="graduacao.html">Graduação</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fim Navbar -->
+        <div id="tabela">
                     <table class="tabela highlight centered">
                         <thead>
                         <th>Código</th>
