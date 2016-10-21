@@ -1,97 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <meta charset="UTF-8">
+        <title>Docentes</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-        <meta charset="UTF-8">
-        <title>Corpo</title>
-         <link href="css/estilo.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="imagem/logo3.ico" />
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/jquery.min.js"></script>
     </head>
     <body>
-        <div id="home">
-            <div id="titulo">
-                <!--<figure class = "logo"><img src="imagem/logo4_1.png" alt="LogoEngcomp"></figure> -->
-                <nav class="menu">  
-                    <form id="formpesquisa">
-                        <div>
-                            <input id="caixapesquisa" type="text" placeholder="Buscar no site">
-                            <input id="botaopesquisa" type="submit" value="">
-                        </div>
-                    </form>
-                    <ul>
-                        <li><img src="imagem/logo4_1.png" alt="LogoEngcomp" width="120"></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="grade.html">Grade Curricular</a></li>
-                        <li><a href="corpo.html">Corpo Docente</a></li>
-                        <li><a href="discente.html">Discentes</a></li>
-                        <li><a href="graduacao.html">Graduação</a></li>
-                        <li><a href="contatos.html">Contatos</a></li>
+       <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper   blue-grey darken-3">
+            <a  href="#!" class="show-on-med-and-up hide-on-med-and-down brand-logo ">Engcomp</a>
+            <a id="logo" href="#!" class="hide-on-med-and-up show-on-med-and-down brand-logo"><img src="imagem/logo4_1.png" alt="LogoEngcomp" width="70"></a>
+            <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="material-icons">menu</i></a>
 
-                    </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grade.html">Grade Curricular</a></li>
+                <li><a href="corpo.html">Docente</a></li>
+                <li><a href="discente.html">Discentes</a></li>
+                <li><a href="graduacao.html">Graduação</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
 
-                </nav>
-            </div>
-            
-             <div class ="link">
-                <a href="http://www.sig.uema.br/" target="_blank">SigUema</a>
-                <a href="http://www.uema.br/portal-do-aluno/" target="_blank">Portal do Aluno</a>
-                <a href="http://www.biblioteca.uema.br/" target="_blank">Biblioteca</a>
-            </div>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grade.html">Grade Curricular</a></li>
+                <li><a href="corpo.html">Docente</a></li>
+                <li><a href="discente.html">Discentes</a></li>
+                <li><a href="graduacao.html">Graduação</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fim Navbar -->
             
             <div class="conteudo">
                 
-                <p>Os professores de disciplinas específicas da Engenharia de Computação estão na tabela abaixo:</p><br>
-                <table class="tabela">
-                    <caption>Professores</caption>
-                    <tr>
-                        <th>NOME DO DOCENTE</th>
-                        <th>TITULAÇÃO</th>
-                        <th>REGIME DE TRABALHO</th>
-                    </tr>
-                    <tr>
-                        <td>Diógenes Carvalho Aquino</td>
-                        <td>Mestre</td>
-                        <td>TIDE</td>
-                    </tr>
-                    <tr>
-                        <td>Fernando Jorge Cutrim Demétrio</td>
-                        <td>Doutor</td>
-                        <td>TIDE</td>
-                    </tr>
-                    <tr>
+                <p>Os professores da casa do curso da Engenharia de Computação estão na tabela abaixo:</p><br>
+                           
+                
+                
+                <table class="tabela striped">
+        <thead>
+          <tr>
+              <th data-field="id">Nome do Docente</th>
+              <th data-field="name">Titulação</th>
+              <th data-field="price">Regime de Trabalho</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
                         <td>Henrique Mariano Costa do Amaral</td>
                         <td>Mestre</td>
                         <td>TIDE</td>
-                    </tr>
-                    <tr>
+          </tr>
+          <tr>
+                        <td>Diógenes Carvalho Aquino</td>
+                        <td>Mestre</td>
+                        <td>TIDE</td>
+          </tr>
+          <tr>
+                        <td>Fernando Jorge Cutrim Demétrio</td>
+                        <td>Doutor</td>
+                        <td>TIDE</td>
+          </tr>
+          <tr>
                         <td>Lucio Flávio Albuquerque Campos</td>
                         <td>Doutor</td>
                         <td>TIDE</td>
-                    </tr>
-                    <tr>
+          </tr>
+          <tr>
                         <td>Luís Carlos Costa Fonseca</td>
                         <td>Doutor</td>
                         <td>TIDE</td>
-                    </tr>
-                    <tr>
+          </tr>
+          <tr>
                         <td>Mauro Sérgio Silva Pinto</td>
-                        <td>Mestre</td>
+                        <td>Doutor</td>
                         <td>TIDE</td>
-                    </tr>
-                    <tr>
+          </tr>
+          <tr>
                         <td>Reinaldo de Jesus da Silva</td>
-                        <td>Mestre</td>
+                        <td>Doutor</td>
                         <td>TIDE</td>
-                    </tr>
-                </table>
+          </tr>
+        </tbody>
+      </table>
+                
+                
+                
             </div>
-            <footer>
-                <p> Todos Direitos reservados a Café-SA</p>
-            </footer>
+    
+           <footer class="page-footer blue-grey darken-3">  
+        
+        
+        
+        <div class="footer-copyright blue-grey darken-3">
+            <div class="container">
+                
+              <div class="col l6 s12">
+                © Desenvolvido pela Café SA
+            </div>
+                      
+                </div>
+           
         </div>
+    </footer>
 
-        <script src="js/javascript.js"></script>
+        <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="js/javascript.js"></script>
     </body>
 </html>
