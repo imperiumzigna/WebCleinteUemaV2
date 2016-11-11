@@ -48,22 +48,22 @@
         answers = {};
 
 
-    $formUser.addEventListener("submit", function () {
+    $($formUser).submit( function () {
         answers.user = [];
 
         if ($name.value !== '' && $email.value !== '') {
-            this.setAttribute('data-answer', 'answered');
+            $(this).attr('data-answer', 'answered');
         }
     });
 
 
     loop($formRadios, function ($form) {
         $form.addEventListener("submit", function () {
-            var $radio = $form.querySelector('input[type="radio"]:checked');
+            var $radio = $($form).eq('input[type="radio"]:checked');
 
             if ($radio) {
                 answers.user.push($radio.value);
-                this.setAttribute('data-answer', 'answered');
+                $(this).attr('data-answer', 'answered');
             }
 
         });
@@ -80,74 +80,60 @@
 
             if (this.getAttribute('data-answer') === 'answered') {
                 loop($quizPagers, function ($pager) {
-                    $pager.classList.remove('is-active');
+                    $($pager).removeClass('is-active');
                 });
 
 
-                $quizPagers[next].classList.add('is-active');
-                $quizQuestions[next].classList.add('is-active');
-                $parent.classList.remove('is-active');
+                $($quizPagers[next]).addClass('is-active');
+                $($quizQuestions[next]).addClass('is-active');
+                $($parent).removeClass('is-active');
             } else {
-                this.classList.add('quiz-form-error');
+                $(this).addClass('quiz-form-error');
             }
 
         });
     });
 
 
-    $quizLastForm.addEventListener("submit", function () {
+    $($quizLastForm).submit( function () {
         var answer = answers.user.sum();
 
         loop($answerProduct, function ($answer) {
-            $answer.classList.add('is-hidden');
+            $($answer).addClass('is-hidden');
         });
 
 
         if (answer >= 16) {
-            $answer1.classList.remove('is-hidden');
+            $($answer1).removeClass('is-hidden');
             return;
         }
         if (answer >= 10) {
-            $answer2.classList.remove('is-hidden');
+            $($answer2).removeClass('is-hidden');
             return;
         }
         if (answer >= 6) {
-            $answer3.classList.remove('is-hidden');
+            $($answer3).removeClass('is-hidden');
             return;
         }
 
-        $answer4.classList.remove('is-hidden');
+        $($answer4).removeClass('is-hidden');
     });
-    $quizLastForm.addEventListener("submit", function () {
-        var xmlhttp = new XMLHttpRequest(),
-            data = "";
 
 
-        data = 'data={ "name": "' + $name.value + '", "email": "' + $email.value + '", "answers": "' + answers.user.sum() + '" }';
-        xmlhttp.open("POST", "process.php", true);
-        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xmlhttp.send(data);
-
-        xmlhttp.onreadystatechange = function () {
-            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-                console.log("cadastrado no banco");
-            }
-        };
-    });
-    $linkAgain.addEventListener("click", function (e) {
+    $($linkAgain).click( function () {
         e.preventDefault();
 
         loop($quizPagers, function ($pager) {
-            $pager.classList.remove('is-active');
+            $($pager).removeClass('is-active');
         });
-        $quizPagers[0].classList.add('is-active');
+        $($quizPagers[0]).addClass('is-active');
     });
 
-    $linkAgain.addEventListener("click", function (e) {
+    $($linkAgain).click( function () {
         loop($quizQuestions, function ($question) {
-            $question.classList.remove('is-active');
+            $($question).removeClass('is-active');
         });
-        $quizQuestions[0].classList.add('is-active');
+        $($quizQuestions[0]).addClass('is-active');
     });
 
 

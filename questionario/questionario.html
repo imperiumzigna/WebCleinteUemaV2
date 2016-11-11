@@ -5,25 +5,31 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="main.css">
-    <script src="//polyfill.io"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 <body>
 
 <section class="content column-ten-twelfths space-bottom-big" id="quiz">
     <div id="quiz-inner">
         <ol class="overflow space-bottom-medium column-half content" id="quiz-pager">
-            <li class="fleft quiz-pager-item is-active">1</li>
+            <li class="fleft quiz-pager-item is-active">-</li>
+            <li class="fleft quiz-pager-item ">1</li>
             <li class="fleft quiz-pager-item">2</li>
             <li class="fleft quiz-pager-item">3</li>
             <li class="fleft quiz-pager-item">4</li>
             <li class="fleft quiz-pager-item">5</li>
             <li class="fleft quiz-pager-item">6</li>
             <li class="fleft quiz-pager-item">7</li>
-            <li class="fleft quiz-pager-item">8</li>
+            <li class="fleft quiz-pager-item">R</li>
         </ol><!-- #quiz-pager -->
 
 
+
+
+
         <ul id="quiz-questions">
+            <!-- .quiz-question-item -->
             <li class="quiz-question-item is-active">
 
                 <p class="quiz-question">Qual area tenho mais afinidade? 1- TI 2-Automação 3-Telecom ?</p>
@@ -45,8 +51,7 @@
                         </label>
                     </fieldset>
                 </form>
-            </li><!-- .quiz-question-item -->
-            
+            </li>
             
             <li class="quiz-question-item">
                 <p class="quiz-question"> O que Você prefere ?</p>
