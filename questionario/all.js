@@ -78,6 +78,7 @@
             var $parent = this.parentNode,
                 next = Array.prototype.slice.call($quizForm).indexOf(this) + 1;
 
+
             if (this.getAttribute('data-answer') === 'answered') {
                 loop($quizPagers, function ($pager) {
                     $($pager).removeClass('is-active');
@@ -92,6 +93,17 @@
             }
 
         });
+    });
+
+
+    $('.quiz-pager-item').click(function(){
+        $(this).addClass('is-active');
+
+        if(!$('.quiz-question-item').find('is-active')) {
+            $(this).find('.quiz-question-item').addClass('is-active');
+        }else{
+            $(this).find('.quiz-question-item').removeClass('is-active');
+        }
     });
 
 
