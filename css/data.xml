@@ -1,0 +1,31 @@
+<questions>  
+      <question>  
+           <question_text answer="1">Questao 1: qual area trabalha com programação e gestao em projetos</question_text>  
+           <options>  
+                <option>TI</option>  
+                <option>Telecom</option>  
+                <option>Automacao</option>  
+           </options>  
+      </question>  
+      <question>  
+           <question_text answer="1">Questao 2: Qual area trabalha com redes, sinais, antenas?</question_text>  
+           <options>  
+                <option>Telecom</option>  
+                <option>TI</option>  
+                <option>Automacao</option>  
+                <option>Nao sei</option>  
+           </options>  
+      </question>  
+      <question>  
+           <question_text answer="1">Questao 3: qual area trabalha com eletronica, robos</question_text>  
+           <options>  
+                <option>automacao</option>  
+                <option>telecom</option>  
+           </options>  
+      </question>  
+ </questions>  
+
+
+
+
+

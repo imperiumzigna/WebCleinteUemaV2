@@ -17,3 +17,24 @@ html,body{
 main {
     flex: 1 0 auto;
   }
+  
+  
+  
+  div#options input{  
+                  margin-left: 15px;    
+           }  
+           ul{  
+                   list-style-type: none;  
+           }  
+           div#wrapper{  
+                  width: 500px;    
+                  background-color: #FAFAFA;  
+                  padding: 10px;  
+                  padding-bottom: 35px;  
+           }  
+           #nextButton{  
+                  float:right;  
+                  width: 100px;  
+                  height: 25px;  
+           }
+           
